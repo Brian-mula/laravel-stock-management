@@ -15,6 +15,11 @@ class CreateSuppliesTable extends Migration
     {
         Schema::create('supplies', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('product');
+            $table->string('contact');
+            $table->foreignId('country_id')->constrained();
+            $table->foreignId('city_id')->constrained();
             $table->timestamps();
         });
     }
