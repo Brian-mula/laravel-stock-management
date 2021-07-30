@@ -16,8 +16,10 @@ class CreateShoesTable extends Migration
         Schema::create('shoes', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->foreignId('brand_id')->constrained();
             $table->string('image');
             $table->string('desc');
+            $table->string('cost');
             $table->timestamps();
         });
     }

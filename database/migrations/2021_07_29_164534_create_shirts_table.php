@@ -15,6 +15,11 @@ class CreateShirtsTable extends Migration
     {
         Schema::create('shirts', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->foreignId('brand_id')->constrained();
+            $table->string('image');
+            $table->string('cost');
+            $table->string('desc');
             $table->timestamps();
         });
     }

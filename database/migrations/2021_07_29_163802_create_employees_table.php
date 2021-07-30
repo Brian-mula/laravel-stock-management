@@ -20,6 +20,7 @@ class CreateEmployeesTable extends Migration
             $table->string('last_name');
             $table->foreignId('country_id');
             $table->foreignId('city_id');
+            $table->string('address');
             $table->string('salary');
             $table->timestamps();
         });
