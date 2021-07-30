@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\CityController;
 use App\Http\Controllers\Backend\CountryController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,3 +23,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('countries',CountryController::class);
+Route::resource('cities',CityController::class);

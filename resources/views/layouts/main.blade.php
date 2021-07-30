@@ -64,18 +64,18 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         
                         <a class="collapse-item" href="{{route('countries.index')}}">Countries</a>
-                        <a class="collapse-item" href="cards.html">Cities</a>
+                        <a class="collapse-item" href="{{route('cities.index')}}">Cities</a>
                     </div>
                 </div>
             </li>
             <!-- products categories -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#products"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Products</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="products" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Categories:</h6>
                         <a class="collapse-item" href="buttons.html">Shoes</a>
@@ -180,7 +180,7 @@
               <div class="row">
                      <div class="col-md-12">
                         <div class="card">
-                            <h4 class="card-header" style="background-color: #6200ea;color:white">
+                            <h4 class="card-header" style="background-color: #673ab7;color:white">
                                 <marquee>Welcome To Stock Management Dashboard</marquee>
                             </h4>
                         </div>
