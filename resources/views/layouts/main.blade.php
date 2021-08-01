@@ -99,12 +99,12 @@
                     <span>Supliers</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                <a class="nav-link" href="{{route('customers.index')}}">
+                    <i class="fas fa-fw fa-users"></i>
                     <span>Customers</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="{{route('employees.index')}}">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Employees</span></a>
             </li>

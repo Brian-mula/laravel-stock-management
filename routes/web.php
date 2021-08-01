@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\Backend\CityController;
 use App\Http\Controllers\Backend\CountryController;
+use App\Http\Controllers\Api\CustomerController;
+use App\Http\Controllers\Backend\EmployeeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +26,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('countries',CountryController::class);
 Route::resource('cities',CityController::class);
+Route::resource('customers',CustomerController::class);
+Route::resource('employees',EmployeeController::class);
